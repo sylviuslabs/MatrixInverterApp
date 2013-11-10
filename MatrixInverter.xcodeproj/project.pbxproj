@@ -15,9 +15,11 @@
 		F52DF634B60EA435913EBA98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52DFE5C5ACFA06D3C8E2CCD /* Main.storyboard */; };
 		F52DF65CE1A983338A46DB9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F52DF8CA1A9CC580FD831098 /* AppDelegate.m */; };
 		F52DF7223E972569BFB1B6D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52DF605BF31C54E2339A8DF /* Images.xcassets */; };
-		F52DF739213AC174CBD131E9 /* MatrixInverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52DF6A6AF9419472A74EBFC /* MatrixInverterTests.m */; };
+		F52DF8901F313FE1408665AB /* SLTestingKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F52DF5802460227D20E91C1E /* SLTestingKit.m */; };
 		F52DF9CB2406D80850CAD9C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52DF25A54A7101C1AA81272 /* InfoPlist.strings */; };
+		F52DFD32DED2D1BF6E70B8A8 /* CALayer+XibConfigurationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52DF792B39E567BE052C06A /* CALayer+XibConfigurationTests.m */; };
 		F52DFD5468C19A76418090F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52DF33A031E66FD023FED90 /* UIKit.framework */; };
+		F52DFD6C41E5B61A02AB6F5E /* CALayer+XibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F52DF470738C76F4D9B37302 /* CALayer+XibConfiguration.m */; };
 		F52DFDF7E246D97EE43BE04B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52DF1B215E413EA8F353AEA /* ViewController.m */; };
 		F52DFE1133BBFD4C16EB74FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52DF95BF2066B3C1362F225 /* CoreGraphics.framework */; };
 		F52DFEAFC83C57B73DA04D01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F52DF1BC743E816940F90FBF /* main.m */; };
@@ -43,10 +45,12 @@
 		F52DF207999ACDD76F590CDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F52DF29D2EFE356E61C0966A /* MatrixInverter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MatrixInverter-Info.plist"; sourceTree = "<group>"; };
 		F52DF33A031E66FD023FED90 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F52DF470738C76F4D9B37302 /* CALayer+XibConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+XibConfiguration.m"; sourceTree = "<group>"; };
 		F52DF4C54FAD527C0E0068A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F52DF50930B339528056313B /* MatrixInverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatrixInverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52DF5802460227D20E91C1E /* SLTestingKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTestingKit.m; sourceTree = "<group>"; };
 		F52DF605BF31C54E2339A8DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F52DF6A6AF9419472A74EBFC /* MatrixInverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatrixInverterTests.m; sourceTree = "<group>"; };
+		F52DF792B39E567BE052C06A /* CALayer+XibConfigurationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+XibConfigurationTests.m"; sourceTree = "<group>"; };
 		F52DF7B3579B0F142B9751C9 /* MatrixInverter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MatrixInverter-Prefix.pch"; sourceTree = "<group>"; };
 		F52DF8CA1A9CC580FD831098 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F52DF95BF2066B3C1362F225 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,7 +59,9 @@
 		F52DFBB0CB2D097AE2E7B269 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F52DFC8C9B208DB96DC673C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F52DFE53055D17544D0D3501 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F52DFE9CE0C27BA11616A009 /* SLTestingKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTestingKit.h; sourceTree = "<group>"; };
 		F52DFF5434665D1B20D7C5CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F52DFF9A9437CB2F1503796F /* CALayer+XibConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+XibConfiguration.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,8 @@
 				F52DFE5C5ACFA06D3C8E2CCD /* Main.storyboard */,
 				F52DFE53055D17544D0D3501 /* ViewController.h */,
 				F52DF1B215E413EA8F353AEA /* ViewController.m */,
+				F52DF470738C76F4D9B37302 /* CALayer+XibConfiguration.m */,
+				F52DFF9A9437CB2F1503796F /* CALayer+XibConfiguration.h */,
 			);
 			path = MatrixInverter;
 			sourceTree = "<group>";
@@ -142,7 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				F52DF71A29889D7F554FB736 /* Supporting Files */,
-				F52DF6A6AF9419472A74EBFC /* MatrixInverterTests.m */,
+				F52DF5802460227D20E91C1E /* SLTestingKit.m */,
+				F52DFE9CE0C27BA11616A009 /* SLTestingKit.h */,
+				F52DF792B39E567BE052C06A /* CALayer+XibConfigurationTests.m */,
 			);
 			path = MatrixInverterTests;
 			sourceTree = "<group>";
@@ -283,7 +293,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F52DF739213AC174CBD131E9 /* MatrixInverterTests.m in Sources */,
+				F52DF8901F313FE1408665AB /* SLTestingKit.m in Sources */,
+				F52DFD32DED2D1BF6E70B8A8 /* CALayer+XibConfigurationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +305,7 @@
 				F52DFEAFC83C57B73DA04D01 /* main.m in Sources */,
 				F52DF65CE1A983338A46DB9C /* AppDelegate.m in Sources */,
 				F52DFDF7E246D97EE43BE04B /* ViewController.m in Sources */,
+				F52DFD6C41E5B61A02AB6F5E /* CALayer+XibConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +426,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MatrixInverter/MatrixInverter-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "MatrixInverter/MatrixInverter-Info.plist";
 				OTHER_CFLAGS = (
 					"-Wall",
@@ -428,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1D45C62A12744CDBB729E7E /* Pods-MatrixInverterTests.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MatrixInverter.app/MatrixInverter";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -436,6 +450,7 @@
 				GCC_PREFIX_HEADER = "MatrixInverter/MatrixInverter-Prefix.pch";
 				INFOPLIST_FILE = "MatrixInverterTests/MatrixInverterTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -444,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1D45C62A12744CDBB729E7E /* Pods-MatrixInverterTests.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MatrixInverter.app/MatrixInverter";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -452,6 +468,7 @@
 				GCC_PREFIX_HEADER = "MatrixInverter/MatrixInverter-Prefix.pch";
 				INFOPLIST_FILE = "MatrixInverterTests/MatrixInverterTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -463,6 +480,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MatrixInverter/MatrixInverter-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "MatrixInverter/MatrixInverter-Info.plist";
 				OTHER_CFLAGS = (
 					"-Wall",
