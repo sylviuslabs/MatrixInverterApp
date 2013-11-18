@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="All Code" pattern="file:MatrixInverter//*||file:MatrixInverterTests//*" />
+</component>

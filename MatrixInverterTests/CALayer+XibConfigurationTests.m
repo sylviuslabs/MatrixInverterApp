@@ -1,7 +1,7 @@
 #import "SLTestingKit.h"
 #import "CALayer+XibConfiguration.h"
 
-@interface CALayerXibConfigurationTests : SLTestCase
+@interface CALayerXibConfigurationTests : XCTestCase
 @end
 
 @implementation CALayerXibConfigurationTests {

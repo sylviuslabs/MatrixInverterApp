@@ -5,6 +5,3 @@
 
 #define MOCKITO_SHORTHAND
 #import <OCMockito/OCMockito.h>
-
-@interface SLTestCase : XCTestCase
-@end
