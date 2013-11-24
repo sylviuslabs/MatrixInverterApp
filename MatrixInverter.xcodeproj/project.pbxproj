@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		308AC0E21EA906C4A7F83864 /* MatrixElementPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AC1205C2EF282EA5535CD /* MatrixElementPresenter.m */; };
+		308AC145420DA88470BAFE28 /* SquareMatrixPresenterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AC1BC7315591129D75F62 /* SquareMatrixPresenterSpec.m */; };
 		308AC341EC2C417667CD3F43 /* AppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AC347C95E6130A1FB1899 /* AppDelegateSpec.m */; };
+		308AC411C6C55367613AA612 /* SquareMatrixPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 308ACE3199CB51B7BE64BB52 /* SquareMatrixPresenter.m */; };
 		308AC7783A307ABC841AE6E4 /* MatrixElementPresenterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AC36BEDFBE95C7C379A99 /* MatrixElementPresenterSpec.m */; };
-		308AC80A87C90F407DCA4435 /* MatrixElementView.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AC661EEDEECE273598746 /* MatrixElementView.m */; };
 		F42A94EE69F046F3B5921426 /* libPods-MatrixInverterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8395130F6A496EAE5068A2 /* libPods-MatrixInverterTests.a */; };
 		F52DF352F6EFAFDF94DA926C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52DF4C54FAD527C0E0068A0 /* Foundation.framework */; };
 		F52DF3D76CECD735F70CDAA2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52DFBB0CB2D097AE2E7B269 /* XCTest.framework */; };
@@ -20,7 +21,7 @@
 		F52DF7223E972569BFB1B6D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52DF605BF31C54E2339A8DF /* Images.xcassets */; };
 		F52DF9CB2406D80850CAD9C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52DF25A54A7101C1AA81272 /* InfoPlist.strings */; };
 		F52DFD5468C19A76418090F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52DF33A031E66FD023FED90 /* UIKit.framework */; };
-		F52DFDF7E246D97EE43BE04B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52DF1B215E413EA8F353AEA /* ViewController.m */; };
+		F52DFDF7E246D97EE43BE04B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52DF1B215E413EA8F353AEA /* MainViewController.m */; };
 		F52DFE1133BBFD4C16EB74FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52DF95BF2066B3C1362F225 /* CoreGraphics.framework */; };
 		F52DFEAFC83C57B73DA04D01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F52DF1BC743E816940F90FBF /* main.m */; };
 		F52DFF73DB47EBB1BBDE5CA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52DF4C54FAD527C0E0068A0 /* Foundation.framework */; };
@@ -40,14 +41,18 @@
 		0F8395130F6A496EAE5068A2 /* libPods-MatrixInverterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MatrixInverterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		308AC0D0FDF33BC7372E9EBF /* MatrixElementPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixElementPresenter.h; sourceTree = "<group>"; };
 		308AC1205C2EF282EA5535CD /* MatrixElementPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixElementPresenter.m; sourceTree = "<group>"; };
+		308AC1BC7315591129D75F62 /* SquareMatrixPresenterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareMatrixPresenterSpec.m; sourceTree = "<group>"; };
 		308AC347C95E6130A1FB1899 /* AppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateSpec.m; sourceTree = "<group>"; };
 		308AC36BEDFBE95C7C379A99 /* MatrixElementPresenterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixElementPresenterSpec.m; sourceTree = "<group>"; };
 		308AC3B410F1125FA4EDA63C /* MatrixElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixElement.h; sourceTree = "<group>"; };
-		308AC661EEDEECE273598746 /* MatrixElementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixElementView.m; sourceTree = "<group>"; };
+		308AC5672E8881F1C03F3180 /* SquareMatrixPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareMatrixPresenter.h; sourceTree = "<group>"; };
 		308AC705DC453E390BD7A68A /* MatrixElementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixElementView.h; sourceTree = "<group>"; };
+		308ACA15840C992C5B2E1A63 /* SquareMatrixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareMatrixView.h; sourceTree = "<group>"; };
+		308ACD6FB4C45BE3456F6B06 /* SquareMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareMatrix.h; sourceTree = "<group>"; };
+		308ACE3199CB51B7BE64BB52 /* SquareMatrixPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareMatrixPresenter.m; sourceTree = "<group>"; };
 		C1D45C62A12744CDBB729E7E /* Pods-MatrixInverterTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixInverterTests.xcconfig"; path = "Pods/Pods-MatrixInverterTests.xcconfig"; sourceTree = "<group>"; };
 		F52DF08BA7B4EC44E141091F /* MatrixInverterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MatrixInverterTests-Info.plist"; sourceTree = "<group>"; };
-		F52DF1B215E413EA8F353AEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F52DF1B215E413EA8F353AEA /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F52DF1BC743E816940F90FBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F52DF207999ACDD76F590CDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F52DF29D2EFE356E61C0966A /* MatrixInverter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MatrixInverter-Info.plist"; sourceTree = "<group>"; };
@@ -61,7 +66,7 @@
 		F52DFAC9A87EF07AABAF2BBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F52DFB0F97DEA438BB065733 /* MatrixInverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatrixInverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52DFBB0CB2D097AE2E7B269 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F52DFE53055D17544D0D3501 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F52DFE53055D17544D0D3501 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F52DFE9CE0C27BA11616A009 /* SLTestingKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTestingKit.h; sourceTree = "<group>"; };
 		F52DFF5434665D1B20D7C5CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,13 +135,16 @@
 				F52DF207999ACDD76F590CDD /* AppDelegate.h */,
 				F52DF8CA1A9CC580FD831098 /* AppDelegate.m */,
 				F52DF605BF31C54E2339A8DF /* Images.xcassets */,
-				F52DFE53055D17544D0D3501 /* ViewController.h */,
-				F52DF1B215E413EA8F353AEA /* ViewController.m */,
+				F52DFE53055D17544D0D3501 /* MainViewController.h */,
+				F52DF1B215E413EA8F353AEA /* MainViewController.m */,
 				308AC705DC453E390BD7A68A /* MatrixElementView.h */,
 				308AC1205C2EF282EA5535CD /* MatrixElementPresenter.m */,
 				308AC0D0FDF33BC7372E9EBF /* MatrixElementPresenter.h */,
 				308AC3B410F1125FA4EDA63C /* MatrixElement.h */,
-				308AC661EEDEECE273598746 /* MatrixElementView.m */,
+				308ACD6FB4C45BE3456F6B06 /* SquareMatrix.h */,
+				308ACA15840C992C5B2E1A63 /* SquareMatrixView.h */,
+				308ACE3199CB51B7BE64BB52 /* SquareMatrixPresenter.m */,
+				308AC5672E8881F1C03F3180 /* SquareMatrixPresenter.h */,
 			);
 			path = MatrixInverter;
 			sourceTree = "<group>";
@@ -157,6 +165,7 @@
 				F52DFE9CE0C27BA11616A009 /* SLTestingKit.h */,
 				308AC36BEDFBE95C7C379A99 /* MatrixElementPresenterSpec.m */,
 				308AC347C95E6130A1FB1899 /* AppDelegateSpec.m */,
+				308AC1BC7315591129D75F62 /* SquareMatrixPresenterSpec.m */,
 			);
 			path = MatrixInverterTests;
 			sourceTree = "<group>";
@@ -299,6 +308,7 @@
 			files = (
 				308AC7783A307ABC841AE6E4 /* MatrixElementPresenterSpec.m in Sources */,
 				308AC341EC2C417667CD3F43 /* AppDelegateSpec.m in Sources */,
+				308AC145420DA88470BAFE28 /* SquareMatrixPresenterSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,9 +318,9 @@
 			files = (
 				F52DFEAFC83C57B73DA04D01 /* main.m in Sources */,
 				F52DF65CE1A983338A46DB9C /* AppDelegate.m in Sources */,
-				F52DFDF7E246D97EE43BE04B /* ViewController.m in Sources */,
+				F52DFDF7E246D97EE43BE04B /* MainViewController.m in Sources */,
 				308AC0E21EA906C4A7F83864 /* MatrixElementPresenter.m in Sources */,
-				308AC80A87C90F407DCA4435 /* MatrixElementView.m in Sources */,
+				308AC411C6C55367613AA612 /* SquareMatrixPresenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
