@@ -5,3 +5,5 @@
 
 #define MOCKITO_SHORTHAND
 #import <OCMockito/OCMockito.h>
+
+#import "Kiwi.h"
