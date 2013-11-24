@@ -15,7 +15,9 @@
 		308AC7783A307ABC841AE6E4 /* MatrixElementPresenterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AC36BEDFBE95C7C379A99 /* MatrixElementPresenterSpec.m */; };
 		308AC840D12E947ACDF22C8E /* MatrixElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AC4B058ACBEFF51BAEC85 /* MatrixElement.m */; };
 		308ACC0895A5082BEE91EABE /* SquareMatrixSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 308ACEAEA50E75AF14083B43 /* SquareMatrixSpec.m */; };
+		308ACCF85A91D40297C2B9A3 /* SLTestingKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 308ACF85AC6182D59728F42D /* SLTestingKit.m */; };
 		308ACD56A1EED2F96C2E62F6 /* MatrixElementSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 308ACBAD8889993383843E5B /* MatrixElementSpec.m */; };
+		6456885CCB5A49F3BE92DAC4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F2054ED556438E961D1B3B /* libPods.a */; };
 		F42A94EE69F046F3B5921426 /* libPods-MatrixInverterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8395130F6A496EAE5068A2 /* libPods-MatrixInverterTests.a */; };
 		F52DF352F6EFAFDF94DA926C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52DF4C54FAD527C0E0068A0 /* Foundation.framework */; };
 		F52DF3D76CECD735F70CDAA2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52DFBB0CB2D097AE2E7B269 /* XCTest.framework */; };
@@ -43,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		0F8395130F6A496EAE5068A2 /* libPods-MatrixInverterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MatrixInverterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		261429359BF349738B26FA22 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		308AC0D0FDF33BC7372E9EBF /* MatrixElementPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixElementPresenter.h; sourceTree = "<group>"; };
 		308AC1205C2EF282EA5535CD /* MatrixElementPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixElementPresenter.m; sourceTree = "<group>"; };
 		308AC1BC7315591129D75F62 /* SquareMatrixPresenterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareMatrixPresenterSpec.m; sourceTree = "<group>"; };
@@ -58,6 +61,8 @@
 		308ACD6FB4C45BE3456F6B06 /* SquareMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareMatrix.h; sourceTree = "<group>"; };
 		308ACE3199CB51B7BE64BB52 /* SquareMatrixPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareMatrixPresenter.m; sourceTree = "<group>"; };
 		308ACEAEA50E75AF14083B43 /* SquareMatrixSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareMatrixSpec.m; sourceTree = "<group>"; };
+		308ACF85AC6182D59728F42D /* SLTestingKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTestingKit.m; sourceTree = "<group>"; };
+		50F2054ED556438E961D1B3B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D45C62A12744CDBB729E7E /* Pods-MatrixInverterTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixInverterTests.xcconfig"; path = "Pods/Pods-MatrixInverterTests.xcconfig"; sourceTree = "<group>"; };
 		F52DF08BA7B4EC44E141091F /* MatrixInverterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MatrixInverterTests-Info.plist"; sourceTree = "<group>"; };
 		F52DF1B215E413EA8F353AEA /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -87,6 +92,7 @@
 				F52DF352F6EFAFDF94DA926C /* Foundation.framework in Frameworks */,
 				F52DFE1133BBFD4C16EB74FE /* CoreGraphics.framework in Frameworks */,
 				F52DFD5468C19A76418090F0 /* UIKit.framework in Frameworks */,
+				6456885CCB5A49F3BE92DAC4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +138,7 @@
 				F52DF33A031E66FD023FED90 /* UIKit.framework */,
 				F52DFBB0CB2D097AE2E7B269 /* XCTest.framework */,
 				0F8395130F6A496EAE5068A2 /* libPods-MatrixInverterTests.a */,
+				50F2054ED556438E961D1B3B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,6 +185,7 @@
 				308AC1BC7315591129D75F62 /* SquareMatrixPresenterSpec.m */,
 				308ACEAEA50E75AF14083B43 /* SquareMatrixSpec.m */,
 				308ACBAD8889993383843E5B /* MatrixElementSpec.m */,
+				308ACF85AC6182D59728F42D /* SLTestingKit.m */,
 			);
 			path = MatrixInverterTests;
 			sourceTree = "<group>";
@@ -190,6 +198,7 @@
 				F52DF66B8D8AF8136B4C29B8 /* MatrixInverter */,
 				F52DF8E4C9E23194CDE31A95 /* MatrixInverterTests */,
 				C1D45C62A12744CDBB729E7E /* Pods-MatrixInverterTests.xcconfig */,
+				261429359BF349738B26FA22 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F52DFB19AA6F5F51E6843699 /* Build configuration list for PBXNativeTarget "MatrixInverter" */;
 			buildPhases = (
+				86C33CC990314755996B08EF /* Check Pods Manifest.lock */,
 				F52DF74BB568CCA302F3D6C5 /* Sources */,
 				F52DF629750FA0B1FAAE2AA7 /* Frameworks */,
 				F52DF1900ABEEDD5A9AF0036 /* Resources */,
+				79E3CB402F1D4E25938589EF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,6 +263,8 @@
 			mainGroup = F52DFCE1EE08C4F7D46A56FF;
 			productRefGroup = F52DF34DB31919733A3BD26B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+			);
 			projectRoot = "";
 			targets = (
 				F52DFA0E89ED91B890C01714 /* MatrixInverter */,
@@ -296,6 +309,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		79E3CB402F1D4E25938589EF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86C33CC990314755996B08EF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		9BFA660F4EEF495B85ABCEE2 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,6 +366,7 @@
 				308AC145420DA88470BAFE28 /* SquareMatrixPresenterSpec.m in Sources */,
 				308ACC0895A5082BEE91EABE /* SquareMatrixSpec.m in Sources */,
 				308ACD56A1EED2F96C2E62F6 /* MatrixElementSpec.m in Sources */,
+				308ACCF85A91D40297C2B9A3 /* SLTestingKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +486,7 @@
 		};
 		F52DF9DED70E2DC882F27295 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 261429359BF349738B26FA22 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -472,6 +517,7 @@
 				INFOPLIST_FILE = "MatrixInverterTests/MatrixInverterTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -490,12 +536,14 @@
 				INFOPLIST_FILE = "MatrixInverterTests/MatrixInverterTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
 		F52DFEF5F500256E7F6F2866 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 261429359BF349738B26FA22 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
