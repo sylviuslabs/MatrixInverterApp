@@ -7,9 +7,9 @@ SPEC_BEGIN(MatrixElementPresenterSpec)
 
         describe(@"Matrix element presenter", ^{
 
-            __block MatrixElementPresenter *presenter;
             __block id <MatrixElement> model;
             __block id <MatrixElementView> view;
+            __block MatrixElementPresenter *presenter;
 
             beforeEach(^{
                 model = mockProtocol(@protocol(MatrixElement));
