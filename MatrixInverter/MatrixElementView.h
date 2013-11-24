@@ -1,5 +1,3 @@
-extern NSString *const MatrixElementInputChanged;
-
 @protocol MatrixElementInputChangeObserver
 - (void)inputChanged;
 
