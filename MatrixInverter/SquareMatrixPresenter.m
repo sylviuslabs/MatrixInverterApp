@@ -11,6 +11,7 @@
 objection_requires_sel(@selector(model), @selector(view));
 
 - (void)awakeFromObjection {
+    [[self model] setMatrixSize:3];
     [[self model] addSizeChangeObserver:self];
 }
 

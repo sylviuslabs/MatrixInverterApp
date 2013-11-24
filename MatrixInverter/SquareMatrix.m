@@ -13,7 +13,7 @@
 - (instancetype)init {
     self = [super init];
     _observers = [[NSMutableArray alloc] init];
-
+    _size = 3;
     return self;
 }
 

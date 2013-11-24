@@ -12,12 +12,11 @@ SPEC_BEGIN(SquareMatrixSpec)
                 matrix = [[SquareMatrix alloc] init];
             });
 
-            it(@"should implement the SquareMatrix protocoal", ^{
+            it(@"should implement the SquareMatrix protocol", ^{
                 assertThat(matrix, conformsTo(@protocol(SquareMatrix)));
             });
 
-            it(@"should be able to set its size to 3", ^{
-                [matrix setMatrixSize:3];
+            it(@"should have default size of 3", ^{
                 assertThatInt([matrix matrixSize], equalToInt(3));
             });
 

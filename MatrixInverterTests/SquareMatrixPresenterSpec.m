@@ -23,10 +23,10 @@ SPEC_BEGIN(SquareMatrixPresenterSpec)
                     [verify(model) addSizeChangeObserver:presenter];
                 });
 
-                it(@"should set the view size to 3 when the matrix size is 3", ^{
-                    [given([model matrixSize]) willReturnInt:3];
+                it(@"should set the view size to 4 when the matrix size is 4", ^{
+                    [given([model matrixSize]) willReturnInt:4];
                     [presenter matrixSizeChanged];
-                    [verify(view) changeToSize:3];
+                    [verify(view) changeToSize:4];
                 });
 
                 it(@"should set the view size to 8 when the matrix size is 8", ^{
@@ -34,6 +34,10 @@ SPEC_BEGIN(SquareMatrixPresenterSpec)
                     [presenter matrixSizeChanged];
                     [verify(view) changeToSize:8];
                 });
+
+
+
+
 
             });
         });
