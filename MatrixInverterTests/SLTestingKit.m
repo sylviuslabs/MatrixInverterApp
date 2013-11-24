@@ -21,16 +21,38 @@ void usingDependencyInjection(void (^block)(void)) {
     });
 }
 
-id injectMock(Class classToMock) {
-    __block id mockObject = mock(classToMock);
-
-    JSObjectionModule *const module = [[JSObjectionModule alloc] init];
-    [module bind:mockObject toClass:classToMock];
-
+static void _checkForNullDefaultInjector(){
     NSCAssert([JSObjection defaultInjector] != nil, @"Default injector should not be nil when injecting mocks! "
             "Did you forget usingDependencyInjection()?");
+}
+
+static id _createModuleAndAddItToDefaultInjector(id (^createAndBindMock)(JSObjectionModule *module)) {
+    _checkForNullDefaultInjector();
+    JSObjectionModule *const module = [[JSObjectionModule alloc] init];
+    id const mockObject = createAndBindMock(module);
 
     JSObjectionInjector *const injector = [[JSObjection defaultInjector] withModule:module];
     [JSObjection setDefaultInjector:injector];
     return mockObject;
+}
+
+id injectMock(Class classToMock) {
+    return _createModuleAndAddItToDefaultInjector(^(JSObjectionModule *module) {
+        id const mockObject = mock(classToMock);
+        [module bind:mockObject toClass:classToMock];
+        return mockObject;
+    });
+}
+
+id injectMockProtocol(Protocol *protocolToMock) {
+    return _createModuleAndAddItToDefaultInjector(^(JSObjectionModule *module) {
+        id const mockObject = mockProtocol(protocolToMock);
+        [module bind:mockObject toProtocol:protocolToMock];
+        return mockObject;
+    });
+}
+
+id getObjectWithDependencies(Class classToGet){
+    _checkForNullDefaultInjector();
+    return [[JSObjection defaultInjector] getObject:classToGet];
 }

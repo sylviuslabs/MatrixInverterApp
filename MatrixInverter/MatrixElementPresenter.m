@@ -1,23 +1,23 @@
+#import <Objection/Objection.h>
 #import "MatrixElementPresenter.h"
 
+@interface MatrixElementPresenter ()
+@property id <MatrixElement> model;
+@property id <MatrixElementView> view;
+@end
 
-@implementation MatrixElementPresenter {
-    id <MatrixElement> _model;
-    id <MatrixElementView> _view;
-}
-- (instancetype)initWithModel:(id <MatrixElement>)model andView:(id <MatrixElementView>)view {
-    self = [super init];
-    _model = model;
-    _view = view;
 
-    [_view addInputChangeObserver:self];
+@implementation MatrixElementPresenter
 
-    return self;
+objection_requires_sel(@selector(model), @selector(view))
+
+- (void)awakeFromObjection {
+    [[self view] addInputChangeObserver:self];
 }
 
 - (void)inputChanged {
     const NSInteger value = [[_view displayValue] integerValue];
-    [_model setNumericValue:[NSNumber numberWithInt:value]];
+    [[self model] setNumericValue:[NSNumber numberWithInt:value]];
 }
 
 @end

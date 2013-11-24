@@ -4,5 +4,4 @@
 
 
 @interface MatrixElementPresenter : NSObject <MatrixElementInputChangeObserver>
-- (instancetype)initWithModel:(id <MatrixElement>)model andView:(id <MatrixElementView>)view;
 @end

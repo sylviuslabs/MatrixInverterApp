@@ -7,6 +7,10 @@
 #import <Objection/Objection.h>
 #import <Kiwi/Kiwi.h>
 
-extern void usingDependencyInjection(void (^block)(void));
+OBJC_EXTERN void usingDependencyInjection(void (^block)(void));
 
-extern id injectMock(Class classToMock);
+OBJC_EXTERN id injectMock(Class classToMock);
+
+OBJC_EXTERN id injectMockProtocol(Protocol *protocolToMock);
+
+OBJC_EXTERN id getObjectWithDependencies(Class classToGet);
