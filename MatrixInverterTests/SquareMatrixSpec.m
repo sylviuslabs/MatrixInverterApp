@@ -1,25 +1,6 @@
 #import "SLTestingKit.h"
 #import "SquareMatrix.h"
 
-@interface SizeCheckingChangeObserver : NSObject <SquareMatrixSizeChangeObserver> {
-    int _expectedSize;
-    SquareMatrix *_matrix;
-}
-@end
-
-@implementation SizeCheckingChangeObserver
-
-- (instancetype)initWithExpectedSize:(int)expectedSize ofMatrix:(SquareMatrix *)matrix {
-    _expectedSize = expectedSize;
-    _matrix = matrix;
-    return self;
-}
-
-- (void)matrixSizeChanged {
-    assertThatInt([_matrix matrixSize], equalToInt(_expectedSize));
-}
-
-@end
 
 SPEC_BEGIN(SquareMatrixSpec)
 
@@ -64,8 +45,12 @@ SPEC_BEGIN(SquareMatrixSpec)
             });
 
             it(@"should set the new size before notifying observers", ^{
-                id <SquareMatrixSizeChangeObserver> observer = [[SizeCheckingChangeObserver alloc]
-                        initWithExpectedSize:5 ofMatrix:matrix];
+                [matrix setMatrixSize:8];
+                id const observer = [KWMock mockForProtocol:@protocol(SquareMatrixSizeChangeObserver)];
+                [observer stub:@selector(matrixSizeChanged) withBlock:^id(NSArray *params) {
+                    assertThatInt([matrix matrixSize], equalToInt(5));
+                    return nil;
+                }];
                 [matrix addSizeChangeObserver:observer];
                 [matrix setMatrixSize:5];
             });
