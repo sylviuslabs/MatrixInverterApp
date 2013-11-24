@@ -8,3 +8,8 @@
 
 - (void)addSizeChangeObserver:(id <SquareMatrixSizeChangeObserver>)observer;
 @end
+
+@interface SquareMatrix : NSObject <SquareMatrix>
+
+- (void)setMatrixSize:(int)newSize;
+@end
