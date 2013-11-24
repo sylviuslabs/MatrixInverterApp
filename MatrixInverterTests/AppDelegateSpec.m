@@ -18,7 +18,7 @@ SPEC_BEGIN(AppDelegateSpec)
                 assertThat(appDelegate, conformsTo(@protocol(UIApplicationDelegate)));
             });
 
-            it(@"shoud create a window when launching", ^{
+            it(@"should create a window when launching", ^{
                 assertThat([appDelegate window], instanceOf([UIWindow class]));
             });
 
