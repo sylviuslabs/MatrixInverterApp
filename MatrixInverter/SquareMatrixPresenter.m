@@ -1,22 +1,21 @@
+#import <Objection/Objection.h>
 #import "SquareMatrixPresenter.h"
 
+@interface SquareMatrixPresenter ()
+@property id <SquareMatrix> model;
+@property id <SquareMatrixView> view;
+@end
 
-@implementation SquareMatrixPresenter {
-    id <SquareMatrix> _model;
-    id <SquareMatrixView> _view;
-}
-- (instancetype)initWithModel:(id <SquareMatrix>)model andView:(id <SquareMatrixView>)view {
-    self = [super init];
-    _model = model;
-    _view = view;
+@implementation SquareMatrixPresenter
 
-    [_model addSizeChangeObserver:self];
+objection_requires_sel(@selector(model), @selector(view));
 
-    return self;
+- (void)awakeFromObjection {
+    [[self model] addSizeChangeObserver:self];
 }
 
 - (void)matrixSizeChanged {
-    [_view changeToSize:[_model matrixSize]];
+    [[self view] changeToSize:[[self model] matrixSize]];
 }
 
 @end
