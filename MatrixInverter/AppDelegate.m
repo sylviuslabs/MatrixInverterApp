@@ -5,6 +5,7 @@
 #import "MatrixInverterModule.h"
 
 @interface AppDelegate ()
+
 @property(nonatomic, retain) MainViewController *mainViewController;
 @end
 

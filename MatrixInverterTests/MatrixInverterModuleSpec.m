@@ -26,7 +26,6 @@ SPEC_BEGIN(MatrixInverterModuleSpec)
                 assertThat([injector getObject:@protocol(SquareMatrixView)], instanceOf([SquareMatrixView class]));
             });
 
-
         });
 
         SPEC_END

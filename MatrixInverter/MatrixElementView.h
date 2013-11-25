@@ -1,8 +1,8 @@
 @protocol MatrixElementInputChangeObserver
+
 - (void)inputChanged;
 
 @end
-
 
 @protocol MatrixElementView
 

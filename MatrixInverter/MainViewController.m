@@ -2,7 +2,6 @@
 #import "MainViewController.h"
 #import "SquareMatrixPresenter.h"
 
-
 @interface MainViewController ()
 
 @property JSObjectFactory *objectFactory;

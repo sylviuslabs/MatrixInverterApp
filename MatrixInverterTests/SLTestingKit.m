@@ -21,7 +21,7 @@ void usingDependencyInjection(void (^block)(void)) {
     });
 }
 
-static void _checkForNullDefaultInjector(){
+static void _checkForNullDefaultInjector() {
     NSCAssert([JSObjection defaultInjector] != nil, @"Default injector should not be nil when injecting mocks! "
             "Did you forget usingDependencyInjection()?");
 }
@@ -52,7 +52,7 @@ id injectMockProtocol(Protocol *protocolToMock) {
     });
 }
 
-id getObjectWithDependencies(Class classToGet){
+id getObjectWithDependencies(Class classToGet) {
     _checkForNullDefaultInjector();
     return [[JSObjection defaultInjector] getObject:classToGet];
 }

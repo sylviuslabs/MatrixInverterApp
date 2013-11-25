@@ -3,28 +3,28 @@
 
 SPEC_BEGIN(MatrixElementSpec)
 
-describe(@"matrix elements", ^{
+        describe(@"matrix elements", ^{
 
-    __block MatrixElement *element;
+            __block MatrixElement *element;
 
-    beforeEach(^{
-        element = [[MatrixElement alloc] init];
-    });
+            beforeEach(^{
+                element = [[MatrixElement alloc] init];
+            });
 
-    it(@"should implement the MatrixElement protocol", ^{
-        assertThat(element, conformsTo(@protocol(MatrixElement)));
-    });
+            it(@"should implement the MatrixElement protocol", ^{
+                assertThat(element, conformsTo(@protocol(MatrixElement)));
+            });
 
-    it(@"should be able to set numeric value to 357", ^{
-        [element setNumericValue:[NSNumber numberWithInt:347]];
-        assertThat([element numericValue], equalTo([NSNumber numberWithInt:347]));
-    });
+            it(@"should be able to set numeric value to 357", ^{
+                [element setNumericValue:[NSNumber numberWithInt:347]];
+                assertThat([element numericValue], equalTo([NSNumber numberWithInt:347]));
+            });
 
-    it(@"should be able to set numeric value to 12", ^{
-        [element setNumericValue:[NSNumber numberWithInt:12]];
-        assertThat([element numericValue], equalTo([NSNumber numberWithInt:12]));
-    });
+            it(@"should be able to set numeric value to 12", ^{
+                [element setNumericValue:[NSNumber numberWithInt:12]];
+                assertThat([element numericValue], equalTo([NSNumber numberWithInt:12]));
+            });
 
-});
+        });
 
-SPEC_END
+        SPEC_END

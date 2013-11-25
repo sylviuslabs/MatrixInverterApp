@@ -1,4 +1,5 @@
 @protocol SquareMatrixSizeChangeObserver
+
 - (void)matrixSizeChanged;
 @end
 

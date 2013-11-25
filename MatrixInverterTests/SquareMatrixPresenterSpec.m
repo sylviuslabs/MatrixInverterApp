@@ -35,10 +35,6 @@ SPEC_BEGIN(SquareMatrixPresenterSpec)
                     [verify(view) changeToSize:8];
                 });
 
-
-
-
-
             });
         });
 

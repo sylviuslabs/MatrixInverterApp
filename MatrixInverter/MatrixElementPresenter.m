@@ -2,10 +2,10 @@
 #import "MatrixElementPresenter.h"
 
 @interface MatrixElementPresenter ()
+
 @property id <MatrixElement> model;
 @property id <MatrixElementView> view;
 @end
-
 
 @implementation MatrixElementPresenter
 

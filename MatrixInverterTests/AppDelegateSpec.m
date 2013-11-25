@@ -2,7 +2,6 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 
-
 SPEC_BEGIN(AppDelegateSpec)
 
         describe(@"application delegate", ^{
@@ -26,7 +25,6 @@ SPEC_BEGIN(AppDelegateSpec)
                     appDelegate = [[AppDelegate alloc] init];
                     [appDelegate application:nil didFinishLaunchingWithOptions:nil];
                 });
-
 
                 it(@"should create a window when launching", ^{
                     assertThat([appDelegate window], instanceOf([UIWindow class]));

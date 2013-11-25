@@ -1,7 +1,6 @@
 #import "SLTestingKit.h"
 #import "SquareMatrix.h"
 
-
 SPEC_BEGIN(SquareMatrixSpec)
 
         describe(@"square matrix", ^{

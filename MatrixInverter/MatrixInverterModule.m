@@ -2,7 +2,6 @@
 #import "SquareMatrix.h"
 #import "SquareMatrixView.h"
 
-
 @implementation MatrixInverterModule
 
 - (void)configure {

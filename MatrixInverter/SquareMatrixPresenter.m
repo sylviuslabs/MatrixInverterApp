@@ -2,6 +2,7 @@
 #import "SquareMatrixPresenter.h"
 
 @interface SquareMatrixPresenter ()
+
 @property id <SquareMatrix> model;
 @property id <SquareMatrixView> view;
 @end
