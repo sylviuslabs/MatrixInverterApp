@@ -12,7 +12,7 @@ SPEC_BEGIN(MainViewControllerSpec)
                 __block MainViewController *mainViewController;
                 beforeEach(^{
                     objectFactory = injectMock([JSObjectFactory class]);
-                    mainViewController = getObjectWithDependencies([MainViewController class]);
+                    mainViewController = getObjectWithDependencies([MainViewController class], nil);
                     [mainViewController viewDidLoad];
                 });
 

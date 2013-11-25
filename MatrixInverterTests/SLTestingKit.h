@@ -13,4 +13,4 @@ OBJC_EXTERN id injectMock(Class classToMock);
 
 OBJC_EXTERN id injectMockProtocol(Protocol *protocolToMock);
 
-OBJC_EXTERN id getObjectWithDependencies(Class classToGet);
+OBJC_EXTERN id getObjectWithDependencies(Class classToGet, NSArray *argumentList);

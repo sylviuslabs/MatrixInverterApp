@@ -3,4 +3,7 @@
 #import "MatrixElementView.h"
 
 @interface MatrixElementPresenter : NSObject <MatrixElementInputChangeObserver>
+
+- (instancetype)initWithModel:(id <MatrixElement>)model view:(id <MatrixElementView>)view;
+
 @end

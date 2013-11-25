@@ -52,7 +52,7 @@ id injectMockProtocol(Protocol *protocolToMock) {
     });
 }
 
-id getObjectWithDependencies(Class classToGet) {
+id getObjectWithDependencies(Class classToGet, NSArray *argumentList) {
     _checkForNullDefaultInjector();
-    return [[JSObjection defaultInjector] getObject:classToGet];
+    return [[JSObjection defaultInjector] getObject:classToGet argumentList:argumentList];
 }

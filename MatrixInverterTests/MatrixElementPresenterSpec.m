@@ -14,9 +14,9 @@ SPEC_BEGIN(MatrixElementPresenterSpec)
                 __block MatrixElementPresenter *presenter;
 
                 beforeEach(^{
-                    model = injectMockProtocol(@protocol(MatrixElement));
-                    view = injectMockProtocol(@protocol(MatrixElementView));
-                    presenter = getObjectWithDependencies([MatrixElementPresenter class]);
+                    model = mockProtocol(@protocol(MatrixElement));
+                    view = mockProtocol(@protocol(MatrixElementView));
+                    presenter = getObjectWithDependencies([MatrixElementPresenter class], @[model, view]);
                 });
 
                 it(@"should observe the input text for changes", ^{

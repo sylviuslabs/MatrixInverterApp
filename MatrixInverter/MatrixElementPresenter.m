@@ -9,14 +9,24 @@
 
 @implementation MatrixElementPresenter
 
-objection_requires_sel(@selector(model), @selector(view))
+objection_initializer(initWithModel:view:)
+
+- (instancetype)initWithModel:(id <MatrixElement>)model view:(id <MatrixElementView>)view {
+    self = [super init];
+    if (self) {
+        [self setModel:model];
+        [self setView:view];
+    }
+
+    return self;
+}
 
 - (void)awakeFromObjection {
     [[self view] addInputChangeObserver:self];
 }
 
 - (void)inputChanged {
-    const NSInteger value = [[_view displayValue] integerValue];
+    const NSInteger value = [[[self view] displayValue] integerValue];
     [[self model] setNumericValue:[NSNumber numberWithInt:value]];
 }
 

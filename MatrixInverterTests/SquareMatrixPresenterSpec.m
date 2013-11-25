@@ -16,7 +16,7 @@ SPEC_BEGIN(SquareMatrixPresenterSpec)
                 beforeEach(^{
                     model = injectMockProtocol(@protocol(SquareMatrix));
                     view = injectMockProtocol(@protocol(SquareMatrixView));
-                    presenter = getObjectWithDependencies([SquareMatrixPresenter class]);
+                    presenter = getObjectWithDependencies([SquareMatrixPresenter class], nil);
                 });
 
                 it(@"should observe the square matrix for changes in size", ^{
