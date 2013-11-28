@@ -1,8 +1,10 @@
+#import <UIKit/UIKit.h>
+
 @protocol SquareMatrixView
 
 - (void)changeToSize:(int)newSize;
 @end
 
-@interface SquareMatrixView : NSObject
+@interface SquareMatrixView : UIView <SquareMatrixView>
 
 @end

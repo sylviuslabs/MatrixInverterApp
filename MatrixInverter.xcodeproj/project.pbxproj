@@ -18,6 +18,7 @@
 		308AC840D12E947ACDF22C8E /* MatrixElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AC4B058ACBEFF51BAEC85 /* MatrixElement.m */; };
 		308AC886407DEA4C7F0C8513 /* MainViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AC787F5E1169A4697481B /* MainViewControllerSpec.m */; };
 		308AC9509EFA9A178E9F81D2 /* MatrixInverterModuleSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AC814704A1C64B9FE4193 /* MatrixInverterModuleSpec.m */; };
+		308AC96AEE60BE2D29458812 /* SquareMatrixViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 308AC9731360CF1E43C1CDF9 /* SquareMatrixViewSpec.m */; };
 		308ACC0895A5082BEE91EABE /* SquareMatrixSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 308ACEAEA50E75AF14083B43 /* SquareMatrixSpec.m */; };
 		308ACCF85A91D40297C2B9A3 /* SLTestingKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 308ACF85AC6182D59728F42D /* SLTestingKit.m */; };
 		308ACD56A1EED2F96C2E62F6 /* MatrixElementSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 308ACBAD8889993383843E5B /* MatrixElementSpec.m */; };
@@ -64,6 +65,7 @@
 		308AC705DC453E390BD7A68A /* MatrixElementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixElementView.h; sourceTree = "<group>"; };
 		308AC787F5E1169A4697481B /* MainViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewControllerSpec.m; sourceTree = "<group>"; };
 		308AC814704A1C64B9FE4193 /* MatrixInverterModuleSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixInverterModuleSpec.m; sourceTree = "<group>"; };
+		308AC9731360CF1E43C1CDF9 /* SquareMatrixViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareMatrixViewSpec.m; sourceTree = "<group>"; };
 		308ACA1313D239D0FAFDF3A5 /* SquareMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareMatrix.m; sourceTree = "<group>"; };
 		308ACA15840C992C5B2E1A63 /* SquareMatrixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareMatrixView.h; sourceTree = "<group>"; };
 		308ACBAD8889993383843E5B /* MatrixElementSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixElementSpec.m; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				308ACF85AC6182D59728F42D /* SLTestingKit.m */,
 				308AC787F5E1169A4697481B /* MainViewControllerSpec.m */,
 				308AC814704A1C64B9FE4193 /* MatrixInverterModuleSpec.m */,
+				308AC9731360CF1E43C1CDF9 /* SquareMatrixViewSpec.m */,
 			);
 			path = MatrixInverterTests;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				308ACCF85A91D40297C2B9A3 /* SLTestingKit.m in Sources */,
 				308AC886407DEA4C7F0C8513 /* MainViewControllerSpec.m in Sources */,
 				308AC9509EFA9A178E9F81D2 /* MatrixInverterModuleSpec.m in Sources */,
+				308AC96AEE60BE2D29458812 /* SquareMatrixViewSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

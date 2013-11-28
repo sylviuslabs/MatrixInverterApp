@@ -1,3 +1,4 @@
+#import <UIKit/UIKit.h>
 #import "SLTestingKit.h"
 
 void usingDependencyInjection(void (^block)(void)) {
@@ -55,4 +56,14 @@ id injectMockProtocol(Protocol *protocolToMock) {
 id getObjectWithDependencies(Class classToGet, NSArray *argumentList) {
     _checkForNullDefaultInjector();
     return [[JSObjection defaultInjector] getObject:classToGet argumentList:argumentList];
+}
+
+NSArray *getSubviewsOfType(Class subviewClass, UIView *view){
+    NSMutableArray *const matchingSubviews = [[NSMutableArray alloc] init];
+    for (UIView *subview in [view subviews]) {
+        if ([subview isKindOfClass:subviewClass]) {
+            [matchingSubviews addObject:subview];
+        }
+    }
+    return matchingSubviews;
 }

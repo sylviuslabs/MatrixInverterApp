@@ -16,8 +16,22 @@ SPEC_BEGIN(MainViewControllerSpec)
                     [mainViewController viewDidLoad];
                 });
 
-                it(@"should create a SquareMatrixPresenter for input", ^{
-                    [verify(objectFactory) getObject:[SquareMatrixPresenter class]];
+                it(@"should be a view controller", ^{
+                    assertThat(mainViewController, instanceOf([UIViewController class]));
+                });
+
+                it(@"should have a square matrix view for input", ^{
+                    NSArray *const squareMatrixViews = getSubviewsOfType([SquareMatrixView class], [mainViewController view]);
+                    assertThat(squareMatrixViews, hasCountOf(1));
+                });
+
+                it(@"should have a white background", ^{
+                    assertThat([[mainViewController view] backgroundColor], equalTo([UIColor whiteColor]));
+                });
+
+                it(@"should set the inital square matrix size to three", ^{
+                    NSArray *const squareMatrixViews = getSubviewsOfType([SquareMatrixView class], [mainViewController view]);
+                    assertThat([squareMatrixViews[0] subviews], hasCountOf(9));
                 });
 
             });
