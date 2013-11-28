@@ -2,7 +2,7 @@
 
 @protocol SquareMatrixView
 
-- (void)changeToSize:(int)newSize;
+- (void)changeToMatrixSize:(int)newSize;
 @end
 
 @interface SquareMatrixView : UIView <SquareMatrixView>

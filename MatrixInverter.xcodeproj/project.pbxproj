@@ -22,6 +22,7 @@
 		308ACC0895A5082BEE91EABE /* SquareMatrixSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 308ACEAEA50E75AF14083B43 /* SquareMatrixSpec.m */; };
 		308ACCF85A91D40297C2B9A3 /* SLTestingKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 308ACF85AC6182D59728F42D /* SLTestingKit.m */; };
 		308ACD56A1EED2F96C2E62F6 /* MatrixElementSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 308ACBAD8889993383843E5B /* MatrixElementSpec.m */; };
+		378E1B891846D74900A45389 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378E1B881846D74900A45389 /* MainView.xib */; };
 		6456885CCB5A49F3BE92DAC4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F2054ED556438E961D1B3B /* libPods.a */; };
 		F42A94EE69F046F3B5921426 /* libPods-MatrixInverterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8395130F6A496EAE5068A2 /* libPods-MatrixInverterTests.a */; };
 		F52DF352F6EFAFDF94DA926C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52DF4C54FAD527C0E0068A0 /* Foundation.framework */; };
@@ -73,6 +74,7 @@
 		308ACE3199CB51B7BE64BB52 /* SquareMatrixPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareMatrixPresenter.m; sourceTree = "<group>"; };
 		308ACEAEA50E75AF14083B43 /* SquareMatrixSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareMatrixSpec.m; sourceTree = "<group>"; };
 		308ACF85AC6182D59728F42D /* SLTestingKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTestingKit.m; sourceTree = "<group>"; };
+		378E1B881846D74900A45389 /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		50F2054ED556438E961D1B3B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D45C62A12744CDBB729E7E /* Pods-MatrixInverterTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixInverterTests.xcconfig"; path = "Pods/Pods-MatrixInverterTests.xcconfig"; sourceTree = "<group>"; };
 		F52DF08BA7B4EC44E141091F /* MatrixInverterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MatrixInverterTests-Info.plist"; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				308AC17DBAB1E250696BF4E1 /* MatrixInverterModule.m */,
 				308AC4EB4859FD1E9068EBE9 /* MatrixInverterModule.h */,
 				308AC24D6E2D55EDDB1F90C2 /* SquareMatrixView.m */,
+				378E1B881846D74900A45389 /* MainView.xib */,
 			);
 			path = MatrixInverter;
 			sourceTree = "<group>";
@@ -280,8 +283,6 @@
 			mainGroup = F52DFCE1EE08C4F7D46A56FF;
 			productRefGroup = F52DF34DB31919733A3BD26B /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				F52DFA0E89ED91B890C01714 /* MatrixInverter */,
@@ -295,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378E1B891846D74900A45389 /* MainView.xib in Resources */,
 				F52DF48D3F46A095ABE7D065 /* InfoPlist.strings in Resources */,
 				F52DF7223E972569BFB1B6D4 /* Images.xcassets in Resources */,
 			);

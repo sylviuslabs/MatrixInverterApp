@@ -4,6 +4,7 @@
 
 @interface MainViewController ()
 
+@property(weak, nonatomic) IBOutlet SquareMatrixView *inputMatrixView;
 @property JSObjectFactory *objectFactory;
 @end
 
@@ -11,13 +12,8 @@
 
 objection_requires_sel(@selector(objectFactory))
 
-- (void)loadView {
-    [self setView:[[UIView alloc] init]];
-    [[self view] setBackgroundColor:[UIColor whiteColor]];
-    SquareMatrixView *const squareMatrixView = [[SquareMatrixView alloc] init];
-//    [squareMatrixView setFrame:CGRectMake(50, 50, 200, 200)];
-    [squareMatrixView changeToSize:3];
-    [[self view] addSubview:squareMatrixView];
+- (void)viewDidLoad {
+    [[self inputMatrixView] changeToMatrixSize:3];
 }
 
 @end

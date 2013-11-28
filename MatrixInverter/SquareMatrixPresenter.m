@@ -17,7 +17,7 @@ objection_requires_sel(@selector(model), @selector(view));
 }
 
 - (void)matrixSizeChanged {
-    [[self view] changeToSize:[[self model] matrixSize]];
+    [[self view] changeToMatrixSize:[[self model] matrixSize]];
 }
 
 @end

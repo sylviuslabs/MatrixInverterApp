@@ -11,9 +11,9 @@ SPEC_BEGIN(MainViewControllerSpec)
                 __block JSObjectFactory *objectFactory;
                 __block MainViewController *mainViewController;
                 beforeEach(^{
-                    objectFactory = injectMock([JSObjectFactory class]);
-                    mainViewController = getObjectWithDependencies([MainViewController class], nil);
-                    [mainViewController viewDidLoad];
+                    mainViewController = [[MainViewController alloc] initWithNibName:nil
+                                                                              bundle:nil];
+                    [mainViewController view];
                 });
 
                 it(@"should be a view controller", ^{
@@ -23,10 +23,6 @@ SPEC_BEGIN(MainViewControllerSpec)
                 it(@"should have a square matrix view for input", ^{
                     NSArray *const squareMatrixViews = getSubviewsOfType([SquareMatrixView class], [mainViewController view]);
                     assertThat(squareMatrixViews, hasCountOf(1));
-                });
-
-                it(@"should have a white background", ^{
-                    assertThat([[mainViewController view] backgroundColor], equalTo([UIColor whiteColor]));
                 });
 
                 it(@"should set the inital square matrix size to three", ^{
