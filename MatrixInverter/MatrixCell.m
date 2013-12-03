@@ -28,4 +28,8 @@
     [[self observers] addObject:observer];
 }
 
+- (void)removeInputChangeObserver:(id <MatrixElementInputChangeObserver>)observer {
+    [[self observers] removeObject:observer];
+}
+
 @end

@@ -38,6 +38,21 @@ SPEC_BEGIN(MatrixCellSpec)
                 [verify(observer2) inputChanged];
             });
 
+            it(@"should not notify observers that have been removed", ^{
+                id <MatrixElementInputChangeObserver> const observerToKeep = mockProtocol(@protocol
+                        (MatrixElementInputChangeObserver));
+                id <MatrixElementInputChangeObserver> const observerToRemove = mockProtocol(@protocol
+                        (MatrixElementInputChangeObserver));
+                [matrixCell addInputChangeObserver:observerToKeep];
+                [matrixCell addInputChangeObserver:observerToRemove];
+                [matrixCell removeInputChangeObserver:observerToRemove];
+                [matrixCell sendActionsForControlEvents:UIControlEventEditingDidEnd];
+
+                [verify(observerToKeep) inputChanged];
+                [verifyCount(observerToRemove, never()) inputChanged];
+
+            });
+
         });
 
         SPEC_END

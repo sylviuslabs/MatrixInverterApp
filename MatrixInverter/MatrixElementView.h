@@ -10,4 +10,6 @@
 
 - (void)addInputChangeObserver:(id <MatrixElementInputChangeObserver>)observer;
 
+- (void)removeInputChangeObserver:(id <MatrixElementInputChangeObserver>)observer;
+
 @end
